@@ -3,21 +3,29 @@
 
 Development @ Sourcefabric
 ==========================
-*Powered by Flask, MongoDB, Redis and good intentions Eve allows to
-effortlessly build and deploy highly customizable, fully featured RESTful Web
-Services*
+*At Sourcefabric we develop open-source software for media organizations.*
+
+There are several reasons why we develop Open Source software, one of our
+favourites is the chance to work with users. You can also be part of that
+community, helping us and helping others.
+
 
 Contributor's Guide
-------------
+-------------------
+
+Whether you are a journalist, a student or an experienced programmer, anyone has
+the power to contribute and support us to develop better software, you can start
+doing it in different ways, and here you will learn how.
+
 .. toctree::
     :maxdepth: 2
 
-    coding
-    documenting
-    helping
-    localizing
     reporting
     requesting
+    coding/index
+    documenting
+    localizing
+    helping
 
 Developer's Guide
 -----------------
@@ -38,11 +46,9 @@ Overview
 Community
 ---------
 .. toctree::
-    :maxdepth: 1
+    :maxdepth: 2 
 
-    support
-    updates
-    license
+    community
 
 .. note::
    This documentation is under development. Please refer to the links on the
