@@ -23,7 +23,7 @@ doing it in different ways, and here you will learn how.
     reporting
     requesting
     coding/index
-    documenting
+    documenting.rst
     localizing
     helping
 
@@ -32,7 +32,7 @@ Developer's Guide
 .. toctree::
     :maxdepth: 1
 
-    git
+    git.rst
     testing
 
 Overview
