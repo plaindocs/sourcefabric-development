@@ -3,28 +3,25 @@
 Git and GitHub Pull Requests
 ============================
 
-Here you will learn how to contribute code to any of the Sourcefabric products.
-The short version is: do it via GitHub Pull Requests.
+.. Here you will learn how to contribute code to any of the Sourcefabric products. The short version is: do it via GitHub Pull Requests.
 
 In the Sourcefabric Development Team we use Git as the revision control system
 and source code management tool, and GitHub to manage the code committing cycle
 for all Sourcefabric Products.
 
 .. note::
-   This page is not intended as a GitHub guide. GitHub provides already a fairly
-   good bit of help that you can always consult.
+   This page is not intended as a generic guide to using GitHub but as a guide 
+   to using Github at Sourcefabric. 
 
-We are glad to receive your contributions in some other ways, especially if you
-have decided not to be a GitHub user. Submitting GitHub Pull Requests though
-makes the job of the core developers a lot easier, for example when reviewing
-the code, and increases the likelihood of getting your contribution merged into
-our products.
-
+.. We are glad to receive your contributions in some other ways, especially if you have decided not to be a GitHub user. Submitting GitHub Pull Requests though makes the job of the core developers a lot easier, for example when reviewing the code, and increases the likelihood of getting your contribution merged into our products.
+   
 Installing and Setting up Git
 -----------------------------
 
+.. This looks like generic git stuff to me. Delete? TODO:
+
 You can download Git and get it installed, but you better do that with the help
-of your Operating System's software manager, it is always easier (wink)
+of your Operating System's software manager, it is always easier.
 
 Once you have installed Git, the first thing to do is to tell Git about your
 name and e-mail address.
@@ -37,8 +34,12 @@ Set user.name to your real name, not your GitHub nick or any other nick name.
 The email address you set for user.email must match your registered address in
 GitHub, as this will be used to associate your commits with your GitHub account.
 
+
+
 Getting ready
 -------------
+
+.. TODO: This one is kinda muddled. Which are the 3 simple steps? :-p
 
 Before writing your code you must have setup your work environment. This is done
 in three simple steps.
@@ -79,14 +80,11 @@ practice to use that name.
 Working on a ticket
 -------------------
 
-Create a new branch any time you will start working on a ticket, and create it
-branching off of upstream/master.
+Create a new branch off `upstream/master` any time you start working on a ticket.
 
     $ git checkout -b ticket-xxxxx upstream/master
 
-You can also create a branch based on a different branch than master, for
-example when working on a bug fix for a release branch, let's say 1.2
-
+.. You can also create a branch based on a different branch than master, for example when working on a bug fix for a release branch, let's say 1.2 
     $ git checkout -b ticket-xxxxx-1.2 upstream/1.2
 
 Do your work and commit to your local branch (remember to follow the

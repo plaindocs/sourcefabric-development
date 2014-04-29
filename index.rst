@@ -5,27 +5,25 @@ Development @ Sourcefabric
 ==========================
 *At Sourcefabric we develop open-source software for media organizations.*
 
-There are several reasons why we develop Open Source software, one of our
-favourites is the chance to work with users. You can also be part of that
-community, helping us and helping others.
-
+There are several reasons why we develop open-source software, one of our
+favourites is the chance to work with the people who use our software. 
+You can be part of that community, helping us and helping others.
 
 Contributor's Guide
 -------------------
 
-Whether you are a journalist, a student or an experienced programmer, anyone has
-the power to contribute and support us to develop better software, you can start
-doing it in different ways, and here you will learn how.
+Whether you are a journalist, a student a writer or a programmer,
+you can contribute and help us to develop better software.
 
 .. toctree::
     :maxdepth: 2
 
-    reporting
-    requesting
-    coding/index
+    reporting.rst
+    requesting.rst
+    coding/index.rst
     documenting.rst
-    localizing
-    helping
+    localizing.rst
+    helping.rst
 
 Developer's Guide
 -----------------
@@ -33,15 +31,15 @@ Developer's Guide
     :maxdepth: 1
 
     git.rst
-    testing
+    testing.rst
 
 Overview
 --------
 .. toctree::
     :maxdepth: 1
 
-    releases
-    security
+    releases.rst
+    security.rst
 
 Community
 ---------
