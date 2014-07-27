@@ -6,15 +6,14 @@ Community
 Updates
 -------
 
-todo
+TODO
 
 Support
 -------
 
-todo
+TODO
 
 License
 -------
 
-todo
-
+TODO

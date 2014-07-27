@@ -1,7 +1,7 @@
 RESTful Account Management
 ==========================
-.. admonition:: Please note
-
+.. .. admonition:: Please note
+.. Links are broken? TODO: 
     This tutorial assumes that you've read the :ref:`quickstart` and the
     :ref:`auth` guides.
 
@@ -16,11 +16,10 @@ consumed by the accounts themselves?
 
 In the following paragraphs we'll see a couple of possible Account Management
 implementations, both making intensive use of a host of Eve features such as
-:ref:`endpointsec`, :ref:`roleaccess`, :ref:`user-restricted`,
-:ref:`eventhooks`. 
+`endpointsec`, `roleaccess`, :`user-restricted`, `eventhooks`_. 
 
 We assume that SSL/TLS is enabled, which means that our transport layer is
-encrypted, making both :ref:`basic` and :ref:`token` valid options to secure API
+encrypted, making both :ref:`_acounts_basic` and :ref:`token` valid options to secure API
 endpoints. 
 
 Let's say we're upgrading the API we defined in the :ref:`quickstart` tutorial.
@@ -40,8 +39,9 @@ Our tasks are as follows:
    accounts (created by means of the above mentioned endpoint).
 4. Allow authenticated users to only access resources created by themselves.
 
-1. The ``/accounts`` endpoint
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The ``/accounts`` endpoint
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
 The account management endpoint is no different than any other API endpoint.
 It is just a matter of declaring it in our settings file. Let's declare the
 resource schema first.
@@ -98,10 +98,12 @@ Once the endpoint has been configured, we need to add it to the API domain:
     DOMAIN['accounts'] = accounts
 
 
-2. Securing the ``/accounts/`` endpoint
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-2a. Hard-coding our way in
-''''''''''''''''''''''''''
+Securing the ``/accounts/`` endpoint
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Hard-coding our way in
+"""""""""""""""""""""""""
+
 Securing the endpoint can be achieved by allowing only well-known `superusers`
 to operate on it. Our authentication class, which is defined in the launch
 script, can be hard-coded to handle the case:
@@ -138,8 +140,9 @@ are encrypted with `bcrypt` (storing passwords as plain text is *never* a good
 idea). See :ref:`basic` for an alternative, faster but less secure SHA1/MAC
 example. 
 
-2b. User Roles Access Control
-'''''''''''''''''''''''''''''
+User Roles Access Control
+"""""""""""""""""""""""""""""
+
 Hard-coding usernames and passwords might very well do the job, but it is
 hardly the best approach that we can take here. What if another `superurser`
 account needs access to the endpoint? Updating the script each time
@@ -232,8 +235,9 @@ API). Also, should the need arise, we could easily restrict access to more
 endpoints just by updating the settings file, again without touching the
 authentication class.
 
-3. Securing other API endpoints
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Securing other API endpoints
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
 This will be quick, as both the `hard-coding` and the `role-based` access
 control approaches above effectively secure all API endpoints already.  Passing
 an authentication class to the ``Eve`` object enables authentication for the
@@ -244,8 +248,9 @@ Of course, you can still fine-tune security, for example by allowing public
 access to certain endpoints, or to certain HTTP methods. See :ref:`auth` for
 more details.
 
-4. Only allowing access to account resources
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Only allowing access to account resources
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
 Most of the time when you allow Authenticated users to store data, you only
 want them to access their own data. This can be convenientely achieved by
 using the :ref:`user-restricted` feature. When enabled, each stored document is
@@ -308,6 +313,7 @@ other people's data.
 
 Accounts with Token Authentication
 ----------------------------------
+
 As seen in :ref:`token`, token authentication is just a specialized version of
 Basic Authentication. It is actually executed as a standard Basic
 Authentication request where the value of the *username* field is used for
@@ -330,8 +336,9 @@ In light of this, let's review our updated task list:
    tokens.
 6. Allow authenticated users to only access resources created by themselves
 
-1. The ``/accounts/`` endpoint
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The ``/accounts/`` endpoint
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
 This isn't any different than what we did in :ref:`accounts_basic`. We just
 need to add the `token` field to our schema:
 
@@ -359,8 +366,9 @@ need to add the `token` field to our schema:
             }
         }
 
-2. Securing the ``/accounts/`` endpoint
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Securing the ``/accounts/`` endpoint
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
 We defined the `roles` field for the `accounts` schema in the previous step.
 We also need to define the endpoint, making sure that we set the allowed 
 user roles.
@@ -414,8 +422,9 @@ subclass this time around:
         app = Eve(auth=RolesAuth)
         app.run()
 
-3. Building custom tokens on account creation
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Building custom tokens on account creation
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
 The code above has a problem: it won't authenticate anybody, as we aren't
 generating any token yet. Consequently, clients aren't getting their auth tokens
 back so they don't really know how to authenticate. Let's fix that by using the
@@ -464,8 +473,9 @@ database insertion. We simply add (or replace in the unlikely case that the
 request contained it already) a token to every document, and we're done! For
 more information on callbacks, see `Event Hooks`_.
 
-4. Returning the token with the response
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Returning the token with the response
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
 Optionally, you might want to return the tokens with the response. Truth be
 told, this isn't a very good idea. You generally want to send access
 information out-of-band, with an email for example. However we're assuming that
@@ -511,15 +521,17 @@ From now on responses to POST requests aimed at the ``/accounts`` endpoint
 will include the newly generated auth token, allowing the client to consume
 other API endpoints right away.
 
-5. Securing other API endpoints
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Securing other API endpoints
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+`
 As we've seen before, passing an authentication class to the ``Eve`` object
 enables authentication for all API endpoints. Again, you can still fine-tune
 security by allowing public access to certain endpoints or to certain HTTP
 methods. See :ref:`auth` for more details.
 
-6. Only allowing access to account resources
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Only allowing access to account resources
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
 This is achieved with the :ref:`user-restricted` feature, as seen in
 :ref:`accounts_basic`. You might want to store the user token as your
 ``AUTH_FIELD`` value, but if you want user tokens to be easily revocable, then
@@ -527,11 +539,12 @@ your best option is to use the account unique id for this.
 
 Basic vs Token: Final Considerations
 ------------------------------------
+
 Despite being a little more tricky to set up on the server side, Token
 Authentication offers significant advantages. First, you don't have passwords
 stored on the client and  being sent over the wire with every request. If
 you're sending your tokens out-of-band, and you're on SSL/TLS, that's quite
 a lot of additional security. 
 
-.. _SSL/TLS: http://en.wikipedia.org/wiki/Transport_Layer_Security
-.. _`Event Hooks`: http://python-eve.org/features.html#event-hooks
+.. _TLS: http://en.wikipedia.org/wiki/Transport_Layer_Security
+.. _eventhooks: http://python-eve.org/features.html#event-hooks

@@ -3,7 +3,7 @@
 Requesting features
 ===================
 
-At Sourcefabric, we are always looking for ways to improve our software,
+At Sourcefabric we are always looking for ways to improve our software,
 and your ideas are an essential part of this process. Here you
 can find how to submit feature requests to our issue tracker http://dev.sourcefabric.org. 
 

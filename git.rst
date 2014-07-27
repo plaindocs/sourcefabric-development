@@ -1,4 +1,4 @@
-.. _git:
+.. _dev-git:
 
 Git repositories
 ================

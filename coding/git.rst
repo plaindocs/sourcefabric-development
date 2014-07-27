@@ -3,9 +3,7 @@
 Git and GitHub Pull Requests
 ============================
 
-.. Here you will learn how to contribute code to any of the Sourcefabric products. The short version is: do it via GitHub Pull Requests.
-
-In the Sourcefabric Development Team we use Git as the revision control system
+The Sourcefabric Development Team uses Git as the revision control system
 and source code management tool, and GitHub to manage the code committing cycle
 for all Sourcefabric Products.
 
@@ -13,12 +11,10 @@ for all Sourcefabric Products.
    This page is not intended as a generic guide to using GitHub but as a guide 
    to using Github at Sourcefabric. 
 
-.. We are glad to receive your contributions in some other ways, especially if you have decided not to be a GitHub user. Submitting GitHub Pull Requests though makes the job of the core developers a lot easier, for example when reviewing the code, and increases the likelihood of getting your contribution merged into our products.
-   
 Installing and Setting up Git
 -----------------------------
 
-.. This looks like generic git stuff to me. Delete? TODO:
+.. This looks like generic git stuff to me. Delete? TODO: @Holman
 
 You can download Git and get it installed, but you better do that with the help
 of your Operating System's software manager, it is always easier.
@@ -34,12 +30,10 @@ Set user.name to your real name, not your GitHub nick or any other nick name.
 The email address you set for user.email must match your registered address in
 GitHub, as this will be used to associate your commits with your GitHub account.
 
-
-
 Getting ready
 -------------
 
-.. TODO: This one is kinda muddled. Which are the 3 simple steps? :-p
+.. TODO: This one is kinda muddled. Which are the 3 simple steps? :-p @Holman
 
 Before writing your code you must have setup your work environment. This is done
 in three simple steps.
@@ -96,9 +90,3 @@ reviewing your code) and push your changes to your fork in GitHub.
 The first time you run this command you will notice in your GitHub fork that a
 new branch has been created. From then on you can use the same command to
 update your branch with new commits.
-
-Pushing your stuff to GitHub
-----------------------------
-
-When you consider you are done with the task...
-

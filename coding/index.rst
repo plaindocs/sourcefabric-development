@@ -3,13 +3,9 @@
 Writing code
 ============
 
-Joining the community of developers and contributing code is a great way of
-meeting other talented developers, making your work more visible and
-developing your skills.
-
-.. You found a bug? have a great idea? Go to our issue tracker and create a new ticket. You may also consider picking an existing issue.
-
-.. When writing your code you should stick to these coding standards, following those will give you a better chance of getting your code accepted and included in our products.
+Joining the community of developers and contributing code is a great way to
+meet other developers, develop your programming skills and make your work
+more visible.
 
 Contributing code to any Sourcefabric project -- whether a new
 feature or a bug fix -- is simple:

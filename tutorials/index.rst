@@ -6,4 +6,4 @@ Tutorials
 .. toctree::
    :maxdepth: 2
 
-   account_management
+   account_management.rst

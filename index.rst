@@ -3,6 +3,7 @@
 
 Development @ Sourcefabric
 ==========================
+
 *At Sourcefabric we develop open-source software for media organizations.*
 
 There are several reasons why we develop open-source software, one of our
@@ -27,6 +28,7 @@ you can contribute and help us to develop better software.
 
 Developer's Guide
 -----------------
+
 .. toctree::
     :maxdepth: 1
 
@@ -41,14 +43,15 @@ Overview
     releases.rst
     security.rst
 
-Community
----------
-.. toctree::
-    :maxdepth: 2 
+.. COMMENT
+        Community
+        ---------
 
-    community
+        .. toctree::
+            :maxdepth: 2 
+
+            community.rst
 
 .. note::
    This documentation is under development. Please refer to the links on the
-   sidebar for more information, or to get in touch with the development team.
-
+   sidebar to get in touch with the development team.

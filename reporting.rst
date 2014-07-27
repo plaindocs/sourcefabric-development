@@ -5,7 +5,7 @@ Reporting issues
 
 .. admonition:: Found a security hole?
 
-   If you have found a vulnerability issue, please report it only by
+   If you have found a security vulnerability, please report it only by
    sending an e-mail to security@sourcefabric.org. The security team will
    process the request before making a public announcement. For further
    information on this please read our Security policy page.
@@ -21,15 +21,15 @@ and developers, so please keep the following hints in mind.
 *Before creating a bug report*:
 
 - Check if someone else has already reported the same issue by searching 
-  in the issue tracker. Do not give up at the first attempt, also use the 
+  the issue tracker. Do not give up at the first attempt, also use the 
   advanced search. Keeping the issue tracker as clean as possible and 
-  avoiding duplicate issues is really important for us.
+  avoiding duplicate issues is really important.
 - If there is already an open ticket reporting the same issue, please
   contribute by adding as much information as you can, especially if you think
   it would help us to easily reproduce the problem.
-- Do not create a ticket if you are not certain the issue is a bug. Ask in the
-  forums. Our developers are constantly following conversations and answering
-  questions.
+- Do not create a ticket if you are not certain the issue is a bug, ask in the
+  forums. Our developers constantly follow conversations and answer questions 
+  there.
 - Do not use the issue to ask questions, that's what the forums are for.
 
 *When creating a bug report*:
@@ -46,6 +46,7 @@ and developers, so please keep the following hints in mind.
     version, operating system, Web server setup, etc.
   - Provide as much relevant extra information as possible (e.g. 
     messages from error logs and exception backtraces.)
+
 - There is no need to write in the forums that you have reported a bug. Every
   time you report a bug, developers are automatically notified.
 
