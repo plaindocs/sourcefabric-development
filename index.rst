@@ -23,32 +23,13 @@ doing it in different ways, and here you will learn how.
     reporting
     requesting
     coding/index
+    git
+    testing
+    releases
+    security
     documenting
     localizing
     helping
-
-Developer's Guide
------------------
-.. toctree::
-    :maxdepth: 1
-
-    git
-    testing
-
-Overview
---------
-.. toctree::
-    :maxdepth: 1
-
-    releases
-    security
-
-Community
----------
-.. toctree::
-    :maxdepth: 2 
-
-    community
 
 .. note::
    This documentation is under development. Please refer to the links on the
