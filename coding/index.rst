@@ -18,6 +18,7 @@ feature or a bug fix -- is simple:
    :maxdepth: 2
 
    guidelines.rst
-   testing.rst
-   patches.rst
    git.rst
+
+.. patches.rst
+   testing.rst

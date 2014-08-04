@@ -3,17 +3,22 @@
 Community
 =========
 
-Updates
--------
+One of the most underrated ways of contributing is helping others.
 
-TODO
+We have a user community for all of our products, and we cannot always answer questions as soon as we wish because we are focused on delivering the best software we can. You can help by participating in our forums and answering questions.
 
-Support
--------
+.. 
+        Updates
+        -------
 
-TODO
+        TODO
 
-License
--------
+        Support
+        -------
 
-TODO
+        TODO
+
+        License
+        -------
+
+        TODO

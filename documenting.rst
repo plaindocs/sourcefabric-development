@@ -53,17 +53,12 @@ Subprojects:
 
 Change this setting in the main `Sourcefabric project <https://readthedocs.org/dashboard/sourcefabric/>`_ and add the new project as a subproject to it. 
 
-Notifications:
-
-Add Sam and the maintainer of the project documentation. 
-
 Documenting new features
 ------------------------
 
-todo
+TODO
 
 Improving existing texts
 ------------------------
 
-todo
-
+TODO

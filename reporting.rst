@@ -1,7 +1,7 @@
 .. _reporting:
 
-Reporting issues
-================
+Reporting Bugs and Requesting Features
+==========================================
 
 .. admonition:: Found a security hole?
 
@@ -18,7 +18,8 @@ Anyone can submit a bug report to our issue tracker http://dev.sourcefabric.org.
 Creating valid well written bug reports is very helpful to the Quality Assurance team
 and developers, so please keep the following hints in mind.
 
-*Before creating a bug report*:
+Before creating a bug report
+-----------------------------
 
 - Check if someone else has already reported the same issue by searching 
   the issue tracker. Do not give up at the first attempt, also use the 
@@ -32,7 +33,8 @@ and developers, so please keep the following hints in mind.
   there.
 - Do not use the issue to ask questions, that's what the forums are for.
 
-*When creating a bug report*:
+When creating a bug report
+-----------------------------
 
 - Well-written reports are extremely important. By writing them you are helping us
   understand and reproduce issues. 
@@ -48,7 +50,32 @@ and developers, so please keep the following hints in mind.
     messages from error logs and exception backtraces.)
 
 - There is no need to write in the forums that you have reported a bug. Every
-  time you report a bug, developers are automatically notified.
+  time you report a bug developers are automatically notified.
 
 .. TODO: Once you have reported a bug,  more likely you want to know what will happen next. Here you can read how we process a ticket and understand its lifecycle.
 
+
+.. _requesting:
+
+Requesting New Features
+------------------------
+
+At Sourcefabric we are always looking for ways to improve our software,
+and your ideas are an essential part of this process. Here you
+can find how to submit feature requests to our issue tracker http://dev.sourcefabric.org. 
+
+- Add feature requests to our issue tracker, in the User Requests milestone
+  for the relevant project. The Project and Innovations teams in Sourcefabric
+  keep an eye on all submitted requests.
+- The more information you provide the better. Describe the feature and the reason 
+  for the request clearly. Providing a set of use cases is always helpful.
+- If the feature gets accepted it will be pushed to the roadmap and added to
+  one of the upcoming major releases.
+- If you are a programmer and you want to implement the feature yourself, that
+  will make us happy. Code contribution is always welcome. Follow the
+  guidelines here: :ref:`coding`
+- If you have already started working on the feature, show us your code! Good
+  code speaks for itself, and gives you the best chance to get it accepted.
+- After making a feature request, pay attention to the ticket you created in 
+  the issue tracker, our development team will probably start a conversation
+  and give you some valuable feedback.
