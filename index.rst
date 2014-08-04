@@ -22,35 +22,13 @@ you can contribute and help us to develop better software.
     reporting.rst
     requesting.rst
     coding/index.rst
-    documenting.rst
-    localizing.rst
-    helping.rst
-
-Developer's Guide
------------------
-
-.. toctree::
-    :maxdepth: 1
-
     git.rst
-    testing.rst
-
-Overview
---------
-.. toctree::
-    :maxdepth: 1
-
     releases.rst
     security.rst
-
-.. COMMENT
-        Community
-        ---------
-
-        .. toctree::
-            :maxdepth: 2 
-
-            community.rst
+    documenting.rst
+    localizing.rst
+    community.rst
+    helping.rst
 
 .. note::
    This documentation is under development. Please refer to the links on the
